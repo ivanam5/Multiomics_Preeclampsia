@@ -7,6 +7,8 @@ library(broom)
 library(MASS)
 #####################################
 # Data
+mainDir = '' #CHANGE this to reflect the main directory you've selected
+setwd(mainDir)
 proteom_data           <- read.csv(file="proteom_data.csv")
 metabolom_urine_data2  <- read.csv( file="metabolom_urine_data2.csv")
 patientsalldata6       <- read.csv( file="patientsalldata6.csv")

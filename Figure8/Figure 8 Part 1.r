@@ -39,7 +39,7 @@ for(i in 1:ncol(cytof_data)){
     }
 }
 
-score <- read.csv('C:/Users/andyt/Downloads/SCORE2.csv')
+score <- read.csv('SCORE2.csv')
 scores <- score$s_improvednnls
 index <- c(scores[14],scores[17],scores[25],scores[31],scores[42],scores[45],scores[48],scores[53],scores[56],scores[59],scores[62],scores[65],scores[67],scores[70],scores[73],scores[75],scores[78],scores[81],scores[86])
 cytof_data$score <- index
@@ -52,7 +52,7 @@ for(i in 1:371){
 }
 pvals
 
-df <- read.csv('C:/Users/andyt/Downloads/cytofclusters.csv')
+df <- read.csv('cytofclusters.csv')
 
 mask <- c()
 for(i in 1:nrow(df)){
@@ -90,6 +90,6 @@ theme(plot.background = element_rect(fill = "transparent", color = NA)) +
 theme(legend.background = element_rect(fill="transparent")) + theme(legend.text=element_text(size=11)) + theme_void() + 
 theme(legend.position = "none")
 
-ggsave("C:/Users/andyt/Downloads/figure13.png", device = 'png', dpi = 300)
+ggsave("figure13.png", device = 'png', dpi = 300)
 
 

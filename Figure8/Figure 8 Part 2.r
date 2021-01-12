@@ -29,7 +29,7 @@ for(i in 1:ncol(cytof)){
     }
 }
 
-proteome <- read.csv("C:/Users/andyt/Downloads/Datasets/proteome_edited.csv")
+proteome <- read.csv("proteome_edited.csv")
 proteome <- proteome[7:ncol(proteome)]
 proteome
 
@@ -165,6 +165,6 @@ geom_text(label=ifelse(labels > 0 & labels > 19 & labels != 25 & labels != 23 & 
 theme_bw() +  theme(axis.line = element_line(colour = "black")) + theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank()) + theme(legend.title = element_blank()) +theme(panel.border = element_blank())+ theme(panel.background = element_rect(fill = "transparent")) +theme(plot.background = element_rect(fill = "transparent", color = NA)) + theme(legend.background = element_rect(fill="transparent")) +
 theme(axis.title=element_text(size=25)) + theme(axis.text=element_text(size=25))
 
-ggsave("C:/Users/andyt/Downloads/cytofproteomeplotplain_gest.png", device='png')
+ggsave("cytofproteomeplotplain_gest.png", device='png')
 
 
